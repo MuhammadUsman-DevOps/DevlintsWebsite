@@ -1,0 +1,196 @@
+.career-hero-section {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.career-hero-section h2 {
+    font-family: "Onest", Sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 76px;
+    padding: 0 50px;
+
+
+}
+
+.career-hero-section h2 span {
+    background: linear-gradient(91.84deg, #22beff, #a259ff, #fa2c67, #22beff) 0 0 / 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: linearBackground 10s linear infinite;
+}
+
+
+.career-hero-div {
+    width: 100%;
+    margin-top: 150px;
+    padding: 0 100px;
+    padding-bottom: 100px;
+}
+
+.career-hero-div p {
+    font-size: 18px;
+    margin: 13px 0px 0px 0px;
+    font-family: "Onest", "Sans-serif";
+    padding: 25px 0;
+    width: 80%;
+    margin: auto;
+}
+
+.career-hero-div button {
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: "Onest", "Sans-serif";
+    padding: 12px 24px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: none;
+    font-weight: 500;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.career-hero-div button:hover {
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    transition: background-color 0.5s ease-in-out;
+}
+
+
+/* OPEN positionsS SECTION CSS */
+.open-positions-section {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background: #e8e7e7;
+}
+    
+    .open-positions-section h2 {
+    font-family: "Onest", Sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 76px;
+    padding: 0 50px;
+
+
+}
+
+.open-positions-section h2 span {
+    background: linear-gradient(91.84deg, #22beff, #a259ff, #fa2c67, #22beff) 0 0 / 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: linearBackground 10s linear infinite;
+}
+
+
+.open-positions-div {
+    width: 100%;
+    margin-top: 50px;
+    padding: 0 100px;
+    padding-bottom: 25px;
+}
+
+.open-positions-div p {
+    font-size: 18px;
+    margin: 13px 0px 0px 0px;
+    font-family: "Onest", "Sans-serif";
+    padding: 25px 0;
+    width: 80%;
+    margin: auto;
+}
+
+.open-positions-div button {
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: "Onest", "Sans-serif";
+    padding: 12px 24px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: none;
+    font-weight: 500;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.open-positions-div button:hover {
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    transition: background-color 0.5s ease-in-out;
+}
+
+.job-container{
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+    padding: 50px 100px 100px 100px;
+}
+
+.job-detail{
+    display: flex
+;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.job-box{
+    background-color: #ffffff;
+    padding: 20px;
+    width: 50%;
+   
+}
+
+.job-box h3{
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* CAREER RESPONSIVENESS */
+
+@media(max-width: 901px){
+    .career-hero-section h2, .open-positions-section h2  {
+        font-size: 20px;
+        line-height: 43px;
+    }
+    .career-hero-div p, .open-positions-div p{
+        font-size: 12px;
+    }
+    .career-hero-div{
+        padding: 10px;
+    }
+    .career-hero-div button{
+        font-size: 8px;
+    }
+    .job-box h3 {
+        font-size: 12px;
+    }
+    .job-detail{
+        font-size: 10px;
+    }
+    .open-positions-div button{
+        font-size: 8px;
+        padding: 4px 8px;
+    }
+    .job-container{
+        padding: 1px;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    .job-box{
+        width: 100%;
+        
+    }
+    .open-positions-div {
+        padding: 15px;
+    }
+}

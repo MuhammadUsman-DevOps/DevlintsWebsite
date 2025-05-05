@@ -1,0 +1,458 @@
+/* HEADER & NAV STYLES */
+.header {
+    background-color: #050915;
+    color: var(--text-white);
+    font-size: 12px;
+    width: 100%;
+    height: 50px;
+    padding: 7px;
+    font-family: 'onest';
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    transition: height 0.2s ease-in;
+}
+
+nav {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+div img {
+    width: 30px;
+    height: 28px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 25px;
+    column-gap: 34px;
+
+
+}
+
+.nav-links li {
+    list-style: none;
+    padding: 14px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nav-links li a {
+    color: var(--text-white);
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+}
+
+.nav-links li .arrow {
+    width: 20px;
+    height: 16px;
+    margin-left: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-links li a:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+/* SERVICE DROPDOWN MENU */
+.service-dropdown-menu {
+    visibility: hidden;
+    transition: all 0.3s ease;
+    width: 80%;
+    height: 400px;
+    position: absolute;
+    left: 10%;
+    top: 50px;
+    z-index: 100;
+}
+
+.service-grid {
+    display: grid;
+    color: black;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.service-grid #first-box {
+    grid-row: span 5;
+    flex-direction: column;
+    row-gap: 20px;
+    column-gap: 20px;
+    text-align: center;
+}
+
+#first-box {
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    border: none;
+}
+
+#first-box h2 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#first-box p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#first-box button {
+    font-size: 20px;
+    font-weight: 400;
+    border: 2px solid var(--text-white);
+    background-color: transparent;
+    color: var(--text-white);
+    cursor: pointer;
+    padding: 6px 15px;
+    transition: background-color 0.2s ease-in;
+}
+
+#first-box button:hover {
+    color: #000000;
+    background-color: var(--text-white);
+}
+
+.grid-item {
+    border: 1px solid rgb(241, 240, 240);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    color: #000000;
+    background-color: var(--text-white);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.grid-item:hover {
+    color: rgb(11, 11, 93);
+    background-color: rgb(241, 240, 240);
+}
+
+.img-div {
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 100%;
+    display: flex;
+    background-color: var(--primary-color);
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+.grid-item span {
+    width: 60%;
+}
+
+.grid-item img {
+    margin: 8px;
+    width: 30px;
+    height: 30px;
+}
+
+/* HIRING DROPDOWN MENU */
+.hiring-dropdown-menu {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+    position: absolute;
+    background-color: var(--text-white);
+    top: 50px;
+    left: 30%;
+    right: 30%;
+}
+
+.hiring-dropdown-menu.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hiring-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#first-hiring-box {
+    grid-column: span 2;
+    font-weight: 400;
+    color: rgb(77, 77, 77);
+}
+
+.hiring-grid-items {
+    border: 1px solid rgb(241, 240, 240);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 10px;
+    color: #000000;
+    background-color: var(--text-white);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.hiring-grid-items:hover {
+    color: rgb(11, 11, 93);
+    background-color: rgb(241, 240, 240);
+}
+
+/* HOVER DROPDOWNS ONLY ON LARGE SCREENS */
+@media screen and (min-width: 901px) {
+    #service-menu:hover .service-dropdown-menu {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #hire-talent-menu:hover .hiring-dropdown-menu {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+/* HAMBURGER + RESPONSIVE */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 2px 0;
+    transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* MOBILE NAV */
+@media screen and (max-width: 937px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .header {
+        height: 60px;
+        padding: 0;
+        /* border: 1px solid white; */
+    }
+
+    .header.increase-height {
+        height: 600px;
+    }
+
+
+
+
+    .nav-links li .arrow {
+        display: none;
+    }
+
+
+    .service-dropdown-menu.show {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .hamburger {
+        position: absolute;
+        top: 8px;
+        right: 30px;
+    }
+
+    .nav-bar {
+
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        justify-content: center;
+        transition: opacity 0.3s ease-in;
+        visibility: hidden;
+        display: none;
+        opacity: 0;
+    }
+
+    .nav-links>li:first-child {
+        border-top: none;
+    }
+
+    .nav-links>li:last-child {
+        border-bottom: none;
+    }
+
+
+    .nav-links.show {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+
+        padding: 10px 0 100px 0;
+        width: 100%;
+    }
+
+    .nav-links li {
+        width: 100%;
+        justify-content: center;
+        font-size: 16px;
+        border: 1px solid gray;
+    }
+    .nav-links li:hover{
+        background-color: rgb(7, 7, 7);
+    }
+
+    .logo-div {
+        width: 100%;
+        text-align: left;
+        padding: 8px 0 20px 30px;
+    }
+
+    .logo-div img {
+        width: 30px;
+        height: 28px;
+    }
+
+    .service-dropdown-menu {
+        left: 0;
+        top: 234px;
+        height: 234px;
+        right: 10;
+        width: 100%;
+
+    }
+
+    .service-menu > div:first-child {
+        margin-left: 28px;
+    }
+    .service-menu .arrow{
+        display: block;
+    }
+
+    #first-box h2 {
+        font-size: 20px;
+    }
+
+    #first-box p {
+        font-size: 12px;
+    }
+
+    #first-box button {
+        font-size: 10px;
+        padding: 4px 6px;
+    }
+
+    .grid-item {
+        font-size: 11px;
+    }
+
+    .grid-item img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .img-div {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    .hiring-dropdown-menu {
+        top: 336px;
+    }
+
+    .hiring-grid {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    .hiring-dropdown-menu {
+        left: 0;
+        right: 0;
+    }
+
+    #first-hiring-box {
+        grid-column: span 3;
+        font-size: 12px;
+    }
+
+    .hiring-grid-items {
+        font-size: 11px;
+
+    }
+
+
+}
+
+@media screen and (max-width: 650px) {
+    .service-grid #first-box {
+        display: none;
+    }
+
+    .img-div {
+        display: none;
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hiring-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    
+
+    #first-hiring-box {
+        grid-column: span 2;
+    }
+    
+    .grid-items {
+        justify-content: flex-start;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:479px) {
+    .grid-items {
+        padding: 4px;
+    }
+}

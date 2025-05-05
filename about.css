@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Onest', 'Sans-serif';
+}
+
+.about-hero-section {
+    padding: 150px;
+    text-align: center;
+    line-height: 1.5;
+
+}
+
+
+.about-hero-section h2,
+.technology-section h2 {
+    font-size: 35px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.about-hero-section h2 span,
+.technology-section h2 span {
+    font-weight: 550;
+    background: linear-gradient(91.84deg, #22beff, #a259ff, #fa2c67, #22beff) 0 0 / 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: linearBackground 10s linear infinite;
+}
+
+.about-hero-section p,
+.technology-section p {
+    font-weight: 400;
+    font-size: 18px;
+
+}
+
+.technology-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    row-gap: 20px;
+    column-gap: 20px;
+    flex-wrap: wrap;
+
+
+}
+
+.tech-logo-div img {
+    display: flex;
+    width: 100px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+}
+
+.tech-logo-div {
+    padding: 30px;
+    box-shadow: 0 4px 20px rgb(213, 213, 213);
+    border-radius: 8px;
+    
+}
+
+.technology-title {
+    font-size: 28px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.technology-container {
+    margin: 100px 0px;
+}
+
+
+
+
+.technology-section {
+    padding: 100px;
+    padding-top: 0;
+    text-align: center;
+}
+
+/* responsiveness */
+
+@media (max-width:793px) {
+
+    .about-hero-section h2,
+    .technology-section h2 {
+        font-size: 25px;
+    }
+
+    .about-hero-section {
+        padding: 70px;
+        padding-top: 150px;
+    }
+
+    .about-hero-section p,
+    .technology-section p {
+        font-size: 14px;
+    }
+
+    .technology-title {
+        font-size: 20px;
+    }
+
+    .technology-section {
+        padding: 20px;
+    }
+
+    .tech-logo-div img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .tech-logo-div {
+        display: flex;
+        /* flex: 1 1 calc(50% - 20px); */
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100px;
+        height: 100px;
+    }
+    .tech-logo-div span {
+        font-size: 10px;
+    }
+
+}
+
+@media(max-width: 400px){
+    .about-hero-section h2, .technology-section h2{
+        font-size: 14px;
+        
+    }
+    .about-hero-section p, .technology-section p{
+        font-size: 10px;
+    }
+    .about-hero-section{
+        
+            padding: 30px;
+            padding-top: 80px;
+        
+    }
+   
+}

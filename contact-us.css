@@ -1,0 +1,149 @@
+
+
+.contact-section{
+    padding: 100px;
+    /* margin-top: 150px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+    line-height: 1.5;
+}
+
+.contact-us-container h2{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 76px;
+    padding: 0 50px;
+}
+
+.contact-us-container{
+    width: 80%;
+    margin: auto;
+}
+
+/* CONTACT US FORM CSS */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    
+}
+.contact-us-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    max-width: 900px;
+}
+
+.contact-us-head{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.contact-us-head span {
+
+    background: linear-gradient(91.84deg, #22beff, #a259ff, #fa2c67, #22beff) 0 0 / 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: linearBackground 10s linear infinite;
+}
+.contact-us-head h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 76px;
+    padding: 0 50px;
+
+
+}
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.form-group {
+    flex: 1;
+    min-width: 100px;
+    max-width: calc(100% - 0.5rem);
+}
+.form-group.full-width {
+    max-width: 100%;
+}
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+input, textarea, select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.error {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: none;
+}
+
+/* CONTACT US RESPONSIVENESS */
+
+@media(max-width: 901px){
+    .contact-us-head h2{
+        font-size: 20px;
+        line-height: 43px;
+    }
+    .contact-us-head p {
+        font-size: 13px;
+    }
+    .form-group label {
+        font-size: 14px;
+
+    }
+    .contact-section{
+        padding: 50px;
+        padding-top: 100px;
+    }
+}
+
+@media(max-width: 400px){
+    .contact-section{
+        padding: 10px;
+        padding-top: 100px;
+    }
+    .contact-us-head h2{
+        font-size: 13px;
+        line-height: 30px;
+    }
+}

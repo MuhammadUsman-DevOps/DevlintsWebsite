@@ -1,0 +1,13 @@
+:root {
+    --primary-color : #0984E3;
+    --text-white : #FFFFFF;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Onest', 'Sans-serif';
+}
+

@@ -1,0 +1,115 @@
+.footer-section {
+    background: #050915;
+    color: var(--text-white);
+    padding: 100px 150px 10px 150px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 25px;
+    column-gap: 25px;
+}
+
+.footer-logo p {
+
+    padding: 14px 0;
+    color: skyblue;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.footer-logo img {
+    width: 190px;
+    height: auto;
+}
+
+.footer-menu h2 {
+    font-size: 17px;
+}
+
+.footer-menu p {
+    margin: 14px 0;
+    font-size: 14px;
+    transition: color 0.4s ease;
+    cursor: pointer;
+}
+
+.footer-menu p:hover {
+    color: var(--primary-color);
+
+}
+
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 5px;
+}
+
+.social-icons span {
+
+    border-radius: 100%;
+    background-color: var(--primary-color);
+    padding: 8px;
+    margin: 0 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    color: var(--text-white);
+    fill: var(--text-white);
+    transition: transform 0.2s ease;
+}
+
+.social-icons span:hover {
+    transform: scale(0.9);
+}
+
+.social-icons span img {
+    width: 100%;
+}
+
+.footer-licence {
+
+    text-align: center;
+    margin-top: 70px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* RESPONSIVE FOOTER */
+
+@media(max-width: 901px) {
+    .footer-menu h2 {
+        font-size: 12px;
+    }
+
+    .footer-menu p {
+        font-size: 10px;
+    }
+
+    .footer-logo img {
+        width: 110px;
+    }
+
+    .footer-logo p {
+        font-size: 12px;
+    }
+
+    .social-icons span {
+        width: 25px;
+        height: 25px;
+    }
+
+    .footer-licence {
+        font-size: 10px;
+    }
+
+    .footer-section {
+        padding: 60px;
+        padding-bottom: 20px;
+    }
+}
