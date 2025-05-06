@@ -86,10 +86,16 @@
                 <div class="grid-item">
                   <div class="img-div"> <img src="/images/coding-img.png" alt=""> </div> <span>Ai Developement</span>
                 </div>
+                <div class="grid-item">
+                  <div class="img-div"> <img src="/images/coding-img.png" alt=""> </div> <span>Game Developement</span>
+                </div>
+                <div class="grid-item">
+                  <div class="img-div"> <img src="/images/coding-img.png" alt=""> </div> <span>App Developement</span>
+                </div>
 
 
 
-             
+
 
               </div>
 
@@ -174,32 +180,48 @@
   <!-- Hero section  -->
   <section class="hero-section">
     <div class="hero-div">
-      <h2>Delivering Custom Software with
-        <span>Agile Processes</span> and Expert Talent
-      </h2>
-      <p class="hero-para">
-        We are a team of dedicated and skilled developers with passion for building perfect solutions and fast
-        deliveries. Whether you need rapid development or a custom solution, we’re here to make it happen.
-      </p>
+      <div>
+        <h2>Delivering Custom Software with
+          <span>Agile Processes</span> and Expert Talent
+        </h2>
+        <p class="hero-para">
+          We are a team of dedicated and skilled developers with passion for building perfect solutions and fast
+          deliveries. Whether you need rapid development or a custom solution, we’re here to make it happen.
+        </p>
 
-      <button>Explore Our Unparalleled Solutions</button>
-      <div class="line-div">
-        <hr class="line">
+        <button>Explore Our Unparalleled Solutions</button>
       </div>
+
+
 
       <!-- tech log -->
-      <div class="tech-logo">
+      <div>
+        <div class="line-div">
+          <hr class="line">
+        </div>
+        <div class="tech-logo">
+          
 
-        <img src="images/tech-logo/logo5.png" alt="">
-        <img src="images/tech-logo/logo7.png" alt="">
-        <img src="images/tech-logo/logo6.png" alt="">
-        <img src="images/tech-logo/logo1.png" alt="">
-        <img src="images/tech-logo/logo2.png" alt="">
-        <img src="images/tech-logo/logo3.png" alt="">
-        <img src="images/tech-logo/logo4.png" alt="">
+          <div id="logoSlider">
+            <img src="images/tech-logo/logo5.png" alt="">
+            <img src="images/tech-logo/logo7.png" alt="">
+            <img src="images/tech-logo/logo6.png" alt="">
+            <img src="images/tech-logo/logo1.png" alt="">
+            <img src="images/tech-logo/logo2.png" alt="">
+            <img src="images/tech-logo/logo3.png" alt="">
+            <img src="images/tech-logo/logo4.png" alt="">
+            <img src="images/tech-logo/aws.png" alt="">
+            <img src="images/tech-logo/css.png" alt="">
+            <img src="images/tech-logo/git.png" alt="">
+            <img src="images/tech-logo/js.png" alt="">
+            <img src="images/tech-logo/tailwind.png" alt="">
+          </div>
 
+          
 
+        </div>
       </div>
+
 
     </div>
   </section>
@@ -214,64 +236,136 @@
     </div>
 
     <div class="service-container">
-      <div class="service" id="service1">
-        <div>
-          <img src="images/service-logo/service-1.png" alt="">
-          <div class="service-title">AI Developement</div>
-        </div>
-        <div class="service-des">
-          Leverage AI to create intelligent solutions that automate processes, improve decision-making, and
-          enhance customer experiences. We develop AI-driven applications to optimize business operations.
-        </div>
-
+      <div class="service-arrow">
+          <svg id="service-left-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="prevSlide()">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                  <path d="M5 12H19M5 12L11 6M5 12L11 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </g>
+          </svg>
+          <svg id="service-right-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="nextSlide()">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                  <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </g>
+          </svg>
       </div>
 
-
-
-      <div class="service" id="service2">
-        <div>
-          <img src="images/service-logo/service-2.png" alt="">
-          <div class="service-title"> E-commerce Solutions</div>
-        </div>
-        <div class="service-des">
-          Build customized e-commerce platforms that offer secure payment processing, user-friendly
-          interfaces, and seamless shopping experiences. Our solutions are designed to boost online sales.
-        </div>
-
+      <div class="my-services">
+          <!-- Original services -->
+          <div class="service" id="service1">
+              <div>
+                  <img src="images/service-logo/service-1.png" alt="AI Development">
+                  <div class="service-title">AI Development</div>
+              </div>
+              <div class="service-des">
+                  Leverage AI to create intelligent solutions that automate processes, improve decision-making, and enhance customer experiences. We develop AI-driven applications to optimize business operations.
+              </div>
+          </div>
+          <div class="service" id="service2">
+              <div>
+                  <img src="images/service-logo/service-2.png" alt="E-commerce Solutions">
+                  <div class="service-title">E-commerce Solutions</div>
+              </div>
+              <div class="service-des">
+                  Build customized e-commerce platforms that offer secure payment processing, user-friendly interfaces, and seamless shopping experiences. Our solutions are designed to boost online sales.
+              </div>
+          </div>
+          <div class="service" id="service3">
+              <div>
+                  <img src="images/service-logo/service-3.png" alt="Healthcare Solutions">
+                  <div class="service-title">Healthcare Solutions</div>
+              </div>
+              <div class="service-des">
+                  Create innovative healthcare software solutions that streamline patient management, enhance data accuracy, and improve operational efficiency.
+              </div>
+          </div>
+          <div class="service" id="service4">
+              <div>
+                  <img src="images/service-logo/service-4.png" alt="Food Chain Solutions">
+                  <div class="service-title">Food Chain Solutions</div>
+              </div>
+              <div class="service-des">
+                  Develop tailored solutions for food chains that optimize inventory management, improve customer service, and enhance operational efficiency. Our software solutions streamline food chain processes.
+              </div>
+          </div>
+          <div class="service" id="service5">
+              <div>
+                  <img src="images/service-logo/service-4.png" alt="Food Chain Solutions">
+                  <div class="service-title">Food Chain Solutions</div>
+              </div>
+              <div class="service-des">
+                  Develop tailored solutions for food chains that optimize inventory management, improve customer service, and enhance operational efficiency. Our software solutions streamline food chain processes.
+              </div>
+          </div>
+          <div class="service" id="service6">
+              <div>
+                  <img src="images/service-logo/service-4.png" alt="Food Chain Solutions">
+                  <div class="service-title">Food Chain Solutions</div>
+              </div>
+              <div class="service-des">
+                  Develop tailored solutions for food chains that optimize inventory management, improve customer service, and enhance operational efficiency. Our software solutions streamline food chain processes.
+              </div>
+          </div>
+          <!-- Cloned services for seamless looping -->
+          <div class="service" id="service1-clone">
+              <div>
+                  <img src="images/service-logo/service-1.png" alt="AI Development">
+                  <div class="service-title">AI Development</div>
+              </div>
+              <div class="service-des">
+                  Leverage AI to create intelligent solutions that automate processes, improve decision-making, and enhance customer experiences. We develop AI-driven applications to optimize business operations.
+              </div>
+          </div>
+          <div class="service" id="service2-clone">
+              <div>
+                  <img src="images/service-logo/service-2.png" alt="E-commerce Solutions">
+                  <div class="service-title">E-commerce Solutions</div>
+              </div>
+              <div class="service-des">
+                  Build customized e-commerce platforms that offer secure payment processing, user-friendly interfaces, and seamless shopping experiences. Our solutions are designed to boost online sales.
+              </div>
+          </div>
+          <div class="service" id="service3-clone">
+              <div>
+                  <img src="images/service-logo/service-3.png" alt="Healthcare Solutions">
+                  <div class="service-title">Healthcare Solutions</div>
+              </div>
+              <div class="service-des">
+                  Create innovative healthcare software solutions that streamline patient management, enhance data accuracy, and improve operational efficiency.
+              </div>
+          </div>
+          <div class="service" id="service4-clone">
+              <div>
+                  <img src="images/service-logo/service-4.png" alt="Food Chain Solutions">
+                  <div class="service-title">Food Chain Solutions</div>
+              </div>
+              <div class="service-des">
+                  Develop tailored solutions for food chains that optimize inventory management, improve customer service, and enhance operational efficiency. Our software solutions streamline food chain processes.
+              </div>
+          </div>
+          <div class="service" id="service5-clone">
+              <div>
+                  <img src="images/service-logo/service-4.png" alt="Food Chain Solutions">
+                  <div class="service-title">Food Chain Solutions</div>
+              </div>
+              <div class="service-des">
+                  Develop tailored solutions for food chains that optimize inventory management, improve customer service, and enhance operational efficiency. Our software solutions streamline food chain processes.
+              </div>
+          </div>
+          <div class="service" id="service6-clone">
+              <div>
+                  <img src="images/service-logo/service-4.png" alt="Food Chain Solutions">
+                  <div class="service-title">Food Chain Solutions</div>
+              </div>
+              <div class="service-des">
+                  Develop tailored solutions for food chains that optimize inventory management, improve customer service, and enhance operational efficiency. Our software solutions streamline food chain processes.
+              </div>
+          </div>
       </div>
-
-
-
-      <div class="service" id="service3">
-        <div>
-          <img src="images/service-logo/service-3.png" alt="">
-          <div class="service-title"> Healthcare Solutions</div>
-        </div>
-        <div class="service-des">
-          Create innovative healthcare software solutions that streamline patient management, enhance data
-          accuracy, and improve operational efficiency.
-        </div>
-
-      </div>
-
-
-
-      <div class="service" id="service4">
-        <div>
-          <img src="images/service-logo/service-4.png" alt="">
-          <div class="service-title"> Food Chain Solutions</div>
-        </div>
-        <div class="service-des">
-          Develop tailored solutions for food chains that optimize inventory management, improve customer
-          service, and enhance operational efficiency. Our software solutions streamline food chain processes.
-        </div>
-
-      </div>
-
-
-
-
-    </div>
+  </div>
 
   </section>
 
@@ -530,7 +624,10 @@
   </section>
 
   <script src="index.js"></script>
+  <script src="/slider/logo-slider.js"></script>
+  <script src="slider/service-slider.js"></script>
   <script src="/components/header/header.js"></script>
+  <script src="achievementNumber.js"> </script>
 </body>
 
 </html>

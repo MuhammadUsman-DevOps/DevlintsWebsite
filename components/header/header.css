@@ -73,10 +73,10 @@ div img {
 .service-dropdown-menu {
     visibility: hidden;
     transition: all 0.3s ease;
-    width: 80%;
+    width: 95%;
     height: 400px;
     position: absolute;
-    left: 10%;
+    left: 16%;
     top: 50px;
     z-index: 100;
 }
@@ -84,16 +84,25 @@ div img {
 .service-grid {
     display: grid;
     color: black;
-    width: 100%;
-    grid-template-columns: repeat(3, 1fr);
+    width: 70%;
+    grid-template-columns: repeat(4, 1fr);
 
+}
+.service-dropdown-menu .img-div img{
+    background-color: var(--primary-color);
+    width: 25px;
+    height: 25px;
+}
+
+.hiring-dropdown-menu .img-div img{
+    width: 50px;
 }
 
 .service-grid #first-box {
     grid-row: span 5;
     flex-direction: column;
-    row-gap: 20px;
-    column-gap: 20px;
+    row-gap: 25px;
+    column-gap: 25px;
     text-align: center;
 }
 
@@ -104,7 +113,7 @@ div img {
 }
 
 #first-box h2 {
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 500;
 }
 
@@ -114,14 +123,14 @@ div img {
 }
 
 #first-box button {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
     border: 2px solid var(--text-white);
     background-color: transparent;
     color: var(--text-white);
     cursor: pointer;
     padding: 6px 15px;
-    transition: background-color 0.2s ease-in;
+    transition: background-color 0.3s ease-in;
 }
 
 #first-box button:hover {
@@ -130,7 +139,7 @@ div img {
 }
 
 .grid-item {
-    border: 1px solid rgb(241, 240, 240);
+    border: 1px solid rgb(245, 245, 245);
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -140,7 +149,7 @@ div img {
     background-color: var(--text-white);
     cursor: pointer;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 13px;
     padding: 10px;
 }
 
@@ -153,7 +162,7 @@ div img {
     border: 1px solid rgb(197, 197, 197);
     border-radius: 100%;
     display: flex;
-    background-color: var(--primary-color);
+    padding: 20px;
     align-items: center;
     justify-content: center;
     width: 50px;
@@ -169,6 +178,7 @@ div img {
     width: 30px;
     height: 30px;
 }
+
 
 /* HIRING DROPDOWN MENU */
 .hiring-dropdown-menu {
@@ -276,7 +286,7 @@ div img {
     }
 
 
-
+   
 
     .nav-links li .arrow {
         display: none;
@@ -286,6 +296,10 @@ div img {
     .service-dropdown-menu.show {
         visibility: visible;
         opacity: 1;
+    }
+
+    .service-grid {
+        width: 100%;
     }
 
     .hamburger {
@@ -343,6 +357,7 @@ div img {
     }
 
     .logo-div img {
+        margin-top: 6px;
         width: 30px;
         height: 28px;
     }

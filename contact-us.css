@@ -77,7 +77,10 @@ body {
 label {
     display: block;
     margin-bottom: 0.5rem;
-    color: #555;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-weight: 600;
+
 }
 input, textarea, select {
     width: 100%;
@@ -147,3 +150,94 @@ button:hover {
         line-height: 30px;
     }
 }
+
+
+/* //new */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+
+  body {
+    background: #fff;
+    
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 135px;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .form-column, .info-column {
+    flex: 1 1 300px;
+    text-align: left;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .row > div {
+    flex: 1 1 48%;
+  }
+
+  input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  
+
+  button {
+    padding: 12px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .info-column h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    margin-top: 25px;
+  }
+
+  .info-column p, .info-column a {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .info-column a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .row > div {
+      flex: 1 1 100%;
+    }
+  }
