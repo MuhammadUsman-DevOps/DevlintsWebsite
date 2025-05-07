@@ -136,11 +136,11 @@ body {
 
 @media(max-width: 400px){
     .about-hero-section h2, .technology-section h2{
-        font-size: 14px;
-        
+        font-size: 22px;
+        margin-top: 24px;
     }
     .about-hero-section p, .technology-section p{
-        font-size: 10px;
+        font-size: 13px;
     }
     .about-hero-section{
         

@@ -27,13 +27,19 @@
     color: transparent;
     animation: linearBackground 10s linear infinite;
 }
-
+@keyframes linearBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: -200% 0%;
+    }
+}
 
 .hero-div {
     width: 100%;
     display: flex;
     justify-content: space-between;
-
     flex-direction: column;
     padding: 150px 100px 10px 100px;
     padding-bottom: 25px;

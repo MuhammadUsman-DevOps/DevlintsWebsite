@@ -286,12 +286,6 @@ div img {
     }
 
 
-   
-
-    .nav-links li .arrow {
-        display: none;
-    }
-
 
     .service-dropdown-menu.show {
         visibility: visible;
@@ -301,6 +295,12 @@ div img {
     .service-grid {
         width: 100%;
     }
+    #service-menu, .product-menu, #hire-talent-menu{
+        
+          margin-left: 20px;
+        
+    }
+
 
     .hamburger {
         position: absolute;
@@ -344,7 +344,8 @@ div img {
         width: 100%;
         justify-content: center;
         font-size: 16px;
-        border: 1px solid gray;
+        border: 1px solid rgb(57, 57, 57);
+        border-left: none;
     }
     .nav-links li:hover{
         background-color: rgb(7, 7, 7);
