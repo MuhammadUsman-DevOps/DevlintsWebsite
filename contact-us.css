@@ -7,8 +7,19 @@
   text-align: center;
   gap: 50px;
   line-height: 1.5;
+  background: linear-gradient(135deg, #e0f2fe 0%, #f5f7fa 100%);
 }
 
+.contact-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.2), transparent);
+  border-radius: 50%;
+}
 .contact-us-container h2 {
   font-size: 40px;
   font-weight: 600;
@@ -193,7 +204,7 @@ body {
     padding: 30px;
     border-radius: 8px;
     margin: auto;
-    background: #f3f3f3;
+    background: white;
   
 }
 
