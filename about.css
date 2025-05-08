@@ -65,7 +65,13 @@ body {
     padding: 30px;
     box-shadow: 0 4px 20px rgb(213, 213, 213);
     border-radius: 8px;
-    
+    width: 170px;
+    height: 158px;
+}
+
+#java-img{
+    width: 50px;
+    margin: auto;
 }
 
 .technology-title {

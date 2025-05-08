@@ -16,22 +16,35 @@ document.addEventListener('DOMContentLoaded', () => {
     // Toggle service dropdown on click (mobile only)
     serviceMenu.addEventListener('click', (e) => {
         if (window.innerWidth <= 900) {
-            e.preventDefault();
-            serviceDropdown.classList.toggle('show');
+            const isLink = e.target.closest('a');
+            if (!isLink) {
+                e.preventDefault(); // Only prevent if not clicking a link
+                serviceDropdown.classList.toggle('show');
+            }
         }
     });
 
     // Toggle hiring dropdown on click (mobile only)
     hireTalentMenu.addEventListener('click', (e) => {
         if (window.innerWidth <= 900) {
-            e.preventDefault();
-            hiringDropdown.classList.toggle('show');
+            const isLink = e.target.closest('a');
+            if (!isLink) {
+                e.preventDefault(); // Only prevent if not clicking a link
+                hiringDropdown.classList.toggle('show');
+            }
         }
     });
 
     // Close dropdowns when clicking outside
     document.addEventListener('click', (e) => {
         if (window.innerWidth <= 900) {
+            const clickedLink = e.target.closest('a');
+
+            // Don't close dropdowns if a link inside the dropdown was clicked
+            if (clickedLink && (serviceDropdown.contains(clickedLink) || hiringDropdown.contains(clickedLink))) {
+                return;
+            }
+
             if (!serviceMenu.contains(e.target) && !serviceDropdown.contains(e.target)) {
                 serviceDropdown.classList.remove('show');
             }

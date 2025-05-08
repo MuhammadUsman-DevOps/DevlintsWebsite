@@ -26,7 +26,7 @@ nav {
     justify-content: center;
 }
 
-div img {
+div a img {
     width: 30px;
     height: 28px;
 }
@@ -69,6 +69,7 @@ div img {
     cursor: pointer;
 }
 
+
 /* SERVICE DROPDOWN MENU */
 .service-dropdown-menu {
     visibility: hidden;
@@ -79,6 +80,10 @@ div img {
     left: 16%;
     top: 50px;
     z-index: 100;
+}
+
+.services-tittle span{
+    color: #050915;
 }
 
 .service-grid {
@@ -94,9 +99,7 @@ div img {
     height: 25px;
 }
 
-.hiring-dropdown-menu .img-div img{
-    width: 50px;
-}
+
 
 .service-grid #first-box {
     grid-row: span 5;
@@ -142,7 +145,7 @@ div img {
     border: 1px solid rgb(245, 245, 245);
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     column-gap: 10px;
     color: #000000;
@@ -172,6 +175,9 @@ div img {
 .grid-item span {
     width: 60%;
 }
+.grid-item:hover .services-tittle span, .hiring-grid-items:hover .hiring-titles span{
+    color: rgb(0, 97, 200);
+}
 
 .grid-item img {
     margin: 8px;
@@ -192,6 +198,9 @@ div img {
     right: 30%;
 }
 
+.hiring-titles span{
+    color: #050915;
+}
 .hiring-dropdown-menu.show {
     visibility: visible;
     opacity: 1;
